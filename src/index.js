@@ -7,7 +7,7 @@ let newHTML = "";
 function createModal(agrees) {
     for (let index = 0; index < agrees.length; index++) {
         console.log(agrees[index].modalHeading);
-         const elements = `<div>
+        const elements = `<div>
                              <input type="checkbox" name="DeepInsightConsent" value="1"></input>
                              <input type="hidden" name="DeepInsightConsent" value="0"></input>
                              <label>${agrees[index].agree}
@@ -20,12 +20,10 @@ function createModal(agrees) {
                                  <p></p>
                                  <button style="cursor: pointer" class="hide-consent" id="consent_hide_${index}">Close</button>
                              </div>
-                         </div>`;             
-         newHTML += elements;
-     }
-     
-     
-     htmlElement.innerHTML = newHTML;
+                        </div>`;             
+        newHTML += elements;
+    }
+    htmlElement.innerHTML = newHTML;
 }
    
 createModal(agrees);
