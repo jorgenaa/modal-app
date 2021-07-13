@@ -80,9 +80,7 @@ input {
 }
 
 .modal {
-    visibility: hidden;
-    opacity: 0;
-    display: block;
+    display: none;
     position: absolute;
     left: 0px;
     right: 0px;
