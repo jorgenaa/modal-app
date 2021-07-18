@@ -10,9 +10,9 @@
 
 </style>
 <body>
-    <div id="page-content">
-        <div id="signup-page">
-            <div id="logo">
+    <div class="page-content">
+        <div class="signup-page">
+            <div id="logo" class="logo">
                 <img src="https://rooms.entraos.io/1000px-Entra_logo.svg.png" alt="Whydah User Registration">
                 <h2>Register new user</h2>
             </div>
@@ -30,9 +30,13 @@
                     <h4><label for="cellphone">Cell phone:</label></h4>
                     <input id="cellphone" class="user-input" name="cellphone" size="30" type="text" placeholder="Cellphone">
                     <input type="hidden" id="slackuser" name="slackuser" size="30" placeholder="Rebel Slack Nick">
-                    <h4><label for="samtykker">Tilgjengelige samtykker:</label></h4>
-                    <div id="agrees-container"></div> 
+
+                    <h4 class="agreements-heading"><label for="samtykker">Tilgjengelige samtykker:</label></h4>
+                    <div id="agrees-container" ></div> 
                     <p>You will receive an e-mail with instructions of how to set your password.</p>
+                   
+                    <input id="commit" class="button button-login" name="commit" type="submit" value="Register" disabled="" style="cursor: not-allowed;">
+                 
                 </form>
             </div>
         </div>
