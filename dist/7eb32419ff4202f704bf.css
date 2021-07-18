@@ -7,6 +7,18 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
     background: transparent;
 }
 
+h4 {
+    margin: 8px 0 4px;
+}
+
+.agreements-heading {
+    margin: 16px 0;
+}
+
+.logo img {
+    max-width: 800px;
+    width: 100%;
+}
 
 .login-box {
     width: 45%;
@@ -22,6 +34,19 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
     box-sizing: border-box;
     min-width: 300px;
 }
+
+.agrees-list {
+    list-style: none;
+}
+
+.agrees-list__item {
+    margin-bottom: 16px;
+}
+
+form {
+    margin-bottom: 16px;
+}
+
 input[type=text], input[type=password] {
     font-family: inherit;
     font-size: 1.1em;
@@ -41,16 +66,6 @@ input[type="hidden" i] {
 }
 
 input {
-    -webkit-writing-mode: horizontal-tb !important;
-    font-style: ;
-    font-variant-ligatures: ;
-    font-variant-caps: ;
-    font-variant-numeric: ;
-    font-variant-east-asian: ;
-    font-weight: ;
-    font-stretch: ;
-    font-size: ;
-    font-family: ;
     text-rendering: auto;
     color: -internal-light-dark(black, white);
     letter-spacing: normal;
@@ -72,18 +87,14 @@ input {
     border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
     border-image: initial;
 }
-.centered {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+
 
 .modal {
-    visibility: hidden;
-    opacity: 0;
-    display: block;
+    max-width: 800px;
+    width: 100%;
+    display: none;
     position: absolute;
+    top: 50%;
     left: 0px;
     right: 0px;
     width: fit-content;
@@ -97,16 +108,32 @@ input {
     padding: 1em;
     background: -internal-light-dark(white, black);
 }
-#page-content {
+.page-content {
     margin: 30px auto;
     padding: 1em;
     max-width: 800px;
     text-align: center;
 }
+
 body {
     font-family: Helvetica, Arial, sans-serif;
     line-height: 1.4;
     color: #4b4b4b;
     background: #eef;
     margin-bottom: 20px;
+}
+
+.button {
+    width: 100%;
+    text-align: center;
+    font-family: inherit;
+    font-size: 1.1em;
+    margin: .5em 0;
+    color: #fff;
+    background: #2D7BB2;
+    padding: .5em;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box;
 }
